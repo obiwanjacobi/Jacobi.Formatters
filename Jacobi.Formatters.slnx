@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Jacobi.Formatters.Tests/Jacobi.Formatters.Tests.csproj" />
+  <Project Path="Jacobi.Formatters/Jacobi.Formatters.csproj" />
+</Solution>
