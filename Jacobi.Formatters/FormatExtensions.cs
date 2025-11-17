@@ -1,4 +1,4 @@
-﻿namespace Jacobi.EnumFormatter;
+﻿namespace Jacobi.Formatters;
 
 public static class FormatExtensions
 {

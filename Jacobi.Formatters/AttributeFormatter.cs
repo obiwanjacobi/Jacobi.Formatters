@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 
-namespace Jacobi.EnumFormatter;
+namespace Jacobi.Formatters;
 
 internal static class EnumAttributeExtensions
 {

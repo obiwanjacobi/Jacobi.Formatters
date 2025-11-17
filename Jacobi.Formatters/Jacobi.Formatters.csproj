@@ -11,6 +11,19 @@
     <Company>Jacobi Software</Company>
     <Description>Extension methods to format the string representation for objects and enums.</Description>
     <Copyright>Copyright (c) 2025 Jacobi Software</Copyright>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageTags>formatter; formatting</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/obiwanjacobi/Jacobi.Formatters</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/obiwanjacobi/Jacobi.Formatters</PackageProjectUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="readme.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

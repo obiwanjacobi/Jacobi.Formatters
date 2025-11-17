@@ -1,4 +1,4 @@
-﻿namespace Jacobi.EnumFormatter.Tests;
+﻿namespace Jacobi.Formatters.Tests;
 
 public class StringFormatterTests
 {

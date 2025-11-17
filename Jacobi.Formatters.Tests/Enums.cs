@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace Jacobi.EnumFormatter.Tests;
+namespace Jacobi.Formatters.Tests;
 
 [Flags]
 public enum TestFlags
