@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="readme.md" />
+  </Folder>
   <Project Path="Jacobi.Formatters.Tests/Jacobi.Formatters.Tests.csproj" />
   <Project Path="Jacobi.Formatters/Jacobi.Formatters.csproj" />
 </Solution>

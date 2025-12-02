@@ -1,4 +1,4 @@
-# Enum Formatter
+# Object and Enum Formatters
 
 Typically the object's `ToString()` value is used as a basis for further formatting.
 For `Enum`s and `[Flags]` there are some exceptions.
@@ -44,3 +44,27 @@ When the specific Attribute is not found on the Enum-option, it's default `ToStr
 *) To-Be-Determined how to format the string if multiple fields are filled.
 
 Note that `NameOf<T>` and `DescriptionOf<T>` use reflection and will perform less good.
+
+## Extensibility
+
+You can write your own formatters by implementing the (static) interface `IFormatter` and / or `IEnumFormatter`.
+
+Here is an example of the `CamelCase` implementation. It implements both interfaces (IEnumFormatter is implemented explicitly) and performs the logic on the `ToString()` value.
+
+```csharp
+public sealed class CamelCase : IFormatter, IEnumFormatter
+{
+    private CamelCase() { }
+
+    public static string Format<T>(T value)
+    {
+        var str = value?.ToString() ?? String.Empty;
+        return new([Char.ToLowerInvariant(str[0]), .. str[1..]]);
+    }
+
+    static string IEnumFormatter.Format<T>(T value)
+        => Format<T>(value);
+}
+```
+
+Refer to the [source code](https://github.com/obiwanjacobi/Jacobi.Formatters) for more examples.
